@@ -19,9 +19,9 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('503674599158972417').setName(`Members: ${member.guild.memberCount}`);
+    member.guild.channels.get('503683011397812234').setName(`Total Users: ${member.guild.memberCount}`);
 });
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('503674599158972417').setName(`Members: ${member.guild.memberCount}`);
+    member.guild.channels.get('503683011397812234').setName(`Total Users: ${member.guild.memberCount}`);
 });
