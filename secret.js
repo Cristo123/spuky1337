@@ -17,11 +17,3 @@ client.on('guildMemberAdd', member => {
   if (!channel) return;
   channel.send(`:envelope_with_arrow: [+] ${member} :tada: `);
 });
-
-client.on('guildMemberAdd', member => {
-    member.guild.channels.get('503684372621164574').setName(`Total Members: ${member.guild.memberCount}`);
-});
-
-client.on('guildMemberRemove', member => {
-    member.guild.channels.get('503684372621164574').setName(`Total Members: ${member.guild.memberCount}`);
-});
